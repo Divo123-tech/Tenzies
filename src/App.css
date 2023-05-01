@@ -1,0 +1,65 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #0B2434;
+  padding: 100px 300px;
+}
+
+h1, p{
+  font-family: "Inter";
+  margin-bottom: 20px;
+  color: #2B283A
+}
+
+.title{
+  font-size: 3rem;
+  margin-bottom: 0px;  
+}
+
+.instructions{
+  font-size: 1.5rem;
+}
+
+.inst-container{
+  max-width: 500px;
+  text-align: center;
+}
+
+
+
+main{
+  background-color: #FAFAFA;
+  width: 950px;
+  height: 600px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.dice-container{
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(5,1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.roll{
+  background-color: #5035FF;
+  color:white;
+  border-radius: 5px;
+  width: 190px;
+  height: 70px;
+  margin-top: 50px;
+  font-size: 32px;
+ cursor: pointer;
+}
+
+.roll:active {
+  box-shadow: inset 5px 5px 10px -3px rgba(0, 0, 0, 0.7);
+}
